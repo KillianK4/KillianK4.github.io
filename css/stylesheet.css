@@ -1,0 +1,118 @@
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #343A40;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: #f8f9fa;
+    color: #333;
+
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.footer-icons img{
+    width: 50px;
+}
+
+#logoImg {
+    width: 50px;
+    height: auto;
+}
+
+/*nav p {*/
+/*        margin: 0;*/
+/*        padding-left: 1rem;*/
+/*        color: black;*/
+/*    }*/
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-link {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: blue;
+}
+
+.navbar-brand img {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+    #logoImg {
+        width: 75px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
+
+
+/* Desktop: 992px and up */
+@media (min-width: 992px) {
+    #logoImg {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav p {
+        font-size: 1.2rem;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0;
+    }
+}
